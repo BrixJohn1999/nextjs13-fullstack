@@ -32,6 +32,16 @@ const links = [
     title: "Dashboard",
     url: "/dashboard",
   },
+  {
+    id: 7,
+    title: "Sample",
+    url: "/sample",
+  },
+  {
+    id: 8,
+    title: "Wiki",
+    url: "/wiki",
+  },
 ];
 const Navbar = () => {
   return (
