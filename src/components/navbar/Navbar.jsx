@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href={"/"} className={styles.logo}>
-        Lamania
+        Brix System
       </Link>
       <div className={styles.links}>
         {links.map((link) => (
