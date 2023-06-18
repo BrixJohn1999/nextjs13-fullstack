@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./page.module.css";
 
 const links = [
   {
@@ -32,28 +33,21 @@ const links = [
     title: "Dashboard",
     url: "/dashboard",
   },
-  {
-    id: 7,
-    title: "Sample",
-    url: "/sample",
-  },
-  {
-    id: 8,
-    title: "Wiki",
-    url: "/wiki",
-  },
 ];
 const Navbar = () => {
   return (
-    <div>
-      <Link href={"/"}>Lamania</Link>
-      <div>
+    <div className={styles.container}>
+      <Link href={"/"} className={styles.logo}>
+        Lamania
+      </Link>
+      <div className={styles.links}>
         {links.map((link) => (
-          <Link key={link.id} href={link.url}>
+          <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
         ))}
       </div>
+      <button className={styles.logout}>Logout</button>
     </div>
   );
 };
