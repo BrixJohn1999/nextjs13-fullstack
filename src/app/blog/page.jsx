@@ -38,7 +38,7 @@ function Blog() {
         </div>
 
         <div className={styles.content}>
-          <h1 className={styles.title}>Creative Portfolio</h1>
+          <h1 className={styles.title}> Portfolio</h1>
           <p className={styles.desc}>
             ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel
             tenetur necessitatibus unde natus perspiciatis, amet cupiditate
