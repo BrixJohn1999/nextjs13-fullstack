@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./page.module.css";
+import DarkModeToogle from "../DarkMode/DarkModeToogle";
 
 const links = [
   {
@@ -41,6 +42,7 @@ const Navbar = () => {
         Brix System
       </Link>
       <div className={styles.links}>
+        <DarkModeToogle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
