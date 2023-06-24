@@ -13,6 +13,7 @@ function Contact() {
             width={500}
             height={500}
             className={styles.image}
+            alt="contact"
           />
         </div>
         <form className={styles.form}>
